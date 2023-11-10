@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.nav-links {
+    margin-left: 20px;
+    text-decoration: none;
+    color: red;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+main {
+    height: 100vh;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero h1 {
+    color: gray;
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero p {
+    font-size: 30px;
+    color: white;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+.cta{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.cta-actions{
+    padding: 20px 50px;
+    background: black;
+    color: white;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    transition: all .5s;
+}
+
+.book{
+    background: red;
+    color: black;
+    font-weight: bolder;
+    transition: all .5s;
+}
+
+.book:hover{
+    rotate: 15deg;
+}
+
+.explore:hover{
+    transform: translateY(10px);
+}
+
+.s{
+    display: inline-block;
+    color: black;
+    rotate: 45deg;
+    z-index: 2;
+    font-size: 90px;
+}
